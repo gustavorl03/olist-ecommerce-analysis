@@ -1,0 +1,15 @@
+# Dados brutos (muito pesados para o GitHub)
+data/raw/
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do Excel
+~$*.xlsx
+
+# Power BI cache
+*.pbix.lock
+
+# VS Code
+.vscode/
