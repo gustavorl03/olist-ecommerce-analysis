@@ -33,21 +33,21 @@ visualização executiva.
 
 ## 📁 Estrutura do Projeto
 
-olist-ecommerce-analysis/
-├── data/
-│   ├── raw/          # Dados originais (não versionados)
-│   └── processed/    # Dados tratados
-├── sql/
-│   ├── 01_create_tables.sql
-│   ├── 02_exploration.sql
-│   └── 03_business_questions.sql
-├── excel/
-│   └── olist_analysis.xlsx
-├── powerbi/
-│   └── dashboard.pbix
-├── docs/
-│   └── insights.md
-└── README.md
+    olist-ecommerce-analysis/
+    ├── data/
+    │   ├── raw/          # Dados originais (não versionados)
+    │   └── processed/    # Dados tratados
+    ├── sql/
+    │   ├── 01_create_tables.sql
+    │   ├── 02_exploration.sql
+    │   └── 03_business_questions.sql
+    ├── excel/
+    │   └── olist_analysis.xlsx
+    ├── powerbi/
+    │   └── dashboard.pbix
+    ├── docs/
+    │   └── insights.md
+    └── README.md
 
 ## 📊 Dataset
 
