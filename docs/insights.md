@@ -29,3 +29,24 @@
 ### Conclusão
 Os nulos encontrados são justificados pelo status dos pedidos.
 97% dos pedidos estão com status delivered — dataset confiável.
+
+## Tabela: olist_order_items
+
+### Volume
+- Total de itens: 112.651
+- Total de pedidos únicos: 99.441
+- Média de itens por pedido: 1,13
+- Pedido com mais itens: 21 itens
+
+### Qualidade dos Dados
+| Coluna | Observação |
+|---|---|
+| price | Veio como texto — convertido via substituição de ponto por vírgula |
+| freight_value | Veio como texto — convertido via substituição de ponto por vírgula |
+| freight_value | 383 valores zerados — possível frete grátis, investigar no SQL |
+
+### Métricas Iniciais
+| Métrica | Valor |
+|---|---|
+| Preço médio dos produtos | R$ 120,65 |
+| Frete médio | R$ 19,99 |
