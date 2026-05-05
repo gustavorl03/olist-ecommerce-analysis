@@ -55,6 +55,10 @@ visualização executiva.
 - **Licença:** CC BY-NC-SA 4.0
 - **Volume:** ~100k pedidos | 9 tabelas | período 2016–2018
 
+> ⚠️ O arquivo `.pbix` não está versionado no repositório por exceder
+> o limite de tamanho do GitHub. Para visualizar o dashboard, 
+> baixe os dados originais no Kaggle e importe o projeto localmente.
+
 ## 📈 Resultado Final
 
 > Dashboard e insights serão adicionados ao fim do projeto.
