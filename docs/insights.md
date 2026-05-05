@@ -30,6 +30,21 @@
 Os nulos encontrados são justificados pelo status dos pedidos.
 97% dos pedidos estão com status delivered — dataset confiável.
 
+## Tabela: orders (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_orders_dataset para orders
+- Tipos de dados verificados e confirmados
+- Coluna delivery_days criada (dias entre compra e entrega)
+- Coluna delivery_delay_days criada (diferença entre entrega real e estimada)
+
+### Observações
+- Tempo máximo de entrega: 81 dias (possível anomalia — investigar no SQL)
+- Maior atraso: +49 dias após o prazo estimado
+- Maior adiantamento: -51 dias antes do prazo
+- Hipótese: Olist adota estratégia de underpromise/overdeliver nos prazos
+
+
 ## Tabela: olist_order_items
 
 ### Volume
