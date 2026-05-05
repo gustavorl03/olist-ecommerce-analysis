@@ -13,3 +13,6 @@ Thumbs.db
 
 # VS Code
 .vscode/
+
+# Power BI (arquivo muito pesado para o GitHub)
+*.pbix
