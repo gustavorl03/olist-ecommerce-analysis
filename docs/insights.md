@@ -135,3 +135,33 @@ Os nulos encontrados são justificados pelo status dos pedidos.
 - 318 cidades distintas, sem valores vazios
 - Insight: concentração em SP pode impactar tempo de entrega 
   para regiões Norte e Nordeste
+
+  ## Tabela: customers (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_customers_dataset para customers
+- Tipos de dados verificados e corrigidos
+- customer_zip_code_prefix mantido como Texto
+
+### Observações
+- 26 estados distintos com clientes cadastrados
+- São Paulo: 42% dos clientes
+- Rio de Janeiro: 14% dos clientes
+- Minas Gerais: 11% dos clientes
+- 58% dos clientes estão fora de SP, mas 60% dos vendedores estão em SP
+- Insight: desbalanceamento geográfico entre vendedores e clientes
+  impacta diretamente o tempo de entrega
+
+## Tabela: geolocation (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_geolocation_dataset para geolocation
+- geolocation_zip_code_prefix mantido como Texto
+- Coordenadas geolocation_lat e geolocation_lng estavam em notação
+  científica — corrigidas substituindo ponto por vírgula
+- Tipos convertidos para Número Decimal após correção
+
+### Observações
+- Tabela com 999+ linhas — múltiplas coordenadas por CEP
+- Sem valores nulos ou erros após correção
+- Coordenadas validadas dentro do território brasileiro
