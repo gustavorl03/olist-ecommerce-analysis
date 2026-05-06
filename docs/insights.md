@@ -93,3 +93,45 @@ Os nulos encontrados são justificados pelo status dos pedidos.
 - 56,4% dos clientes não deixaram mensagem
 - Vazios são esperados — comentário é campo opcional
 - Títulos tinham inconsistência de capitalização — corrigido
+
+## Tabela: order_payments (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_order_payments_dataset para order_payments
+- Tipos de dados verificados e corrigidos
+- Coluna installment_category criada (À Vista, Curto Prazo, Médio Prazo, Longo Prazo)
+
+### Observações
+- Tabela sem valores vazios — excelente qualidade de dados
+- 73% dos pagamentos são via cartão de crédito
+- 18% via boleto bancário
+- Máximo de 13 parcelas — comportamento típico do e-commerce brasileiro
+- Insight: cliente brasileiro compra pelo parcelamento, não pelo preço à vista
+
+## Tabela: products (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_products_dataset para products
+- Tipos de dados verificados e corrigidos
+- Mesclada com product_category_name_translation para traduzir categorias
+- Coluna product_category_name substituída por product_category_name_english
+- 59 categorias distintas de produtos
+
+### Observações
+- Sem valores vazios na coluna de categoria
+- Peso máximo: 30kg — produtos pesados como móveis e equipamentos
+- Peso mínimo: 50g — produtos leves como acessórios e bijuterias
+
+## Tabela: sellers (Power Query)
+
+### Transformações aplicadas
+- Tabela renomeada de olist_sellers_dataset para sellers
+- Tipos de dados verificados e corrigidos
+- seller_zip_code_prefix mantido como Texto
+
+### Observações
+- 19 estados com vendedores cadastrados
+- São Paulo concentra 60% dos vendedores
+- 318 cidades distintas, sem valores vazios
+- Insight: concentração em SP pode impactar tempo de entrega 
+  para regiões Norte e Nordeste
