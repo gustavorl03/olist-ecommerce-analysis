@@ -39,8 +39,9 @@ visualização executiva.
     │   └── processed/    # Dados tratados
     ├── sql/
     │   ├── 01_create_tables.sql
-    │   ├── 02_exploration.sql
-    │   └── 03_business_questions.sql
+    │   ├── 02_import_data.sql
+    │   └── 03_exploration.sql  
+    │   └── 04_business_questions.sql
     ├── powerbi/
     │   └── dashboard.pbix
     ├── docs/
