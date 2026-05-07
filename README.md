@@ -26,7 +26,7 @@ visualização executiva.
 
 | Ferramenta | Finalidade |
 |---|---|
-| Excel + Power Query | Limpeza e exploração inicial dos dados |
+| Power Query (Power BI) | Limpeza e transformação dos dados |
 | PostgreSQL | Modelagem e análise via SQL |
 | Power BI | Dashboard executivo interativo |
 | Git + GitHub | Versionamento e documentação |
@@ -41,8 +41,6 @@ visualização executiva.
     │   ├── 01_create_tables.sql
     │   ├── 02_exploration.sql
     │   └── 03_business_questions.sql
-    ├── excel/
-    │   └── olist_analysis.xlsx
     ├── powerbi/
     │   └── dashboard.pbix
     ├── docs/
