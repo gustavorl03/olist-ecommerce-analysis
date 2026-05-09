@@ -22,6 +22,21 @@ visualização executiva.
 - Como a avaliação dos clientes se relaciona com o tempo de entrega?
 - Quais são os melhores e piores vendedores?
 
+## ⚙️ Como reproduzir o projeto
+
+1. Clone o repositório
+```bash
+   git clone https://github.com/gustavorl03/olist-ecommerce-analysis.git
+```
+2. Baixe o dataset no Kaggle:
+   👉 [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+3. Mova os CSVs para a pasta `data/raw/`
+4. Execute os scripts SQL na ordem:
+   - `01_create_tables.sql`
+   - `02_import_data.sql`
+   - `03_exploration.sql`
+   - `04_business_questions.sql`
+
 ## 🛠️ Ferramentas Utilizadas
 
 | Ferramenta | Finalidade |
@@ -31,21 +46,21 @@ visualização executiva.
 | Power BI | Dashboard executivo interativo |
 | Git + GitHub | Versionamento e documentação |
 
-## 📁 Estrutura do Projeto
-
-    olist-ecommerce-analysis/
+olist-ecommerce-analysis/
     ├── data/
-    │   ├── raw/          # Dados originais (não versionados)
-    │   └── processed/    # Dados tratados
+    │   ├── raw/               # Dados originais (não versionados — ver instruções abaixo)
+    │   └── processed/         # Resultados das queries SQL
     ├── sql/
     │   ├── 01_create_tables.sql
     │   ├── 02_import_data.sql
-    │   └── 03_exploration.sql  
-    │   └── 04_business_questions.sql
+    │   ├── 02_exploration.sql
+    │   └── 03_business_questions.sql
     ├── powerbi/
     │   └── dashboard.pbix
     ├── docs/
-    │   └── insights.md
+    │   ├── 01_data_exploration.md
+    │   ├── 02_sql_analysis.md
+    │   └── 03_dashboard_insights.md
     └── README.md
 
 ## 📊 Dataset
@@ -64,4 +79,4 @@ visualização executiva.
 
 ## 👤 Autor
 
-Feito por Gustavo Lacerda — [LinkedIn](www.linkedin.com/in/gustavo-rlacerda) | [GitHub](https://github.com/gustavorl03)
+Feito por Gustavo Lacerda — [LinkedIn](https://www.linkedin.com/in/gustavo-rlacerda)  | [GitHub](https://github.com/gustavorl03)
