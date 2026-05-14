@@ -14,17 +14,16 @@ CREATE TABLE customers (
     customer_state          CHAR(2)
 );
 
--- Tabela de produtos
-CREATE TABLE products (
-    product_id                    VARCHAR(50) PRIMARY KEY,
-    product_category_name         VARCHAR(100),
-    product_name_lenght           INTEGER,
-    product_description_lenght    INTEGER,
-    product_photos_qty            INTEGER,
-    product_weight_g              INTEGER,
-    product_length_cm             INTEGER,
-    product_height_cm             INTEGER,
-    product_width_cm              INTEGER
+-- Tabela de pedidos
+CREATE TABLE orders (
+    order_id                        VARCHAR(50) PRIMARY KEY,
+    customer_id                     VARCHAR(50) REFERENCES customers(customer_id),
+    order_status                    VARCHAR(20),
+    order_purchase_timestamp        TIMESTAMP,
+    order_approved_at               TIMESTAMP,
+    order_delivered_carrier_date    TIMESTAMP,
+    order_delivered_customer_date   TIMESTAMP,
+    order_estimated_delivery_date   TIMESTAMP
 );
 
 -- Tabela de itens do pedido
@@ -63,15 +62,15 @@ CREATE TABLE order_reviews (
 
 -- Tabela de produtos
 CREATE TABLE products (
-    product_id                      VARCHAR(50) PRIMARY KEY,
-    product_category_name_english   VARCHAR(100),
-    product_name_lenght             INTEGER,
-    product_description_lenght      INTEGER,
-    product_photos_qty              INTEGER,
-    product_weight_g                INTEGER,
-    product_length_cm               INTEGER,
-    product_height_cm               INTEGER,
-    product_width_cm                INTEGER
+    product_id                    VARCHAR(50) PRIMARY KEY,
+    product_category_name         VARCHAR(100),
+    product_name_lenght           INTEGER,
+    product_description_lenght    INTEGER,
+    product_photos_qty            INTEGER,
+    product_weight_g              INTEGER,
+    product_length_cm             INTEGER,
+    product_height_cm             INTEGER,
+    product_width_cm              INTEGER
 );
 
 -- Tabela de vendedores
